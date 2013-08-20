@@ -161,11 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B27F275117C2919800112F91 /* Build configuration list for PBXNativeTarget "Take-Off" */;
 			buildPhases = (
+				B2888F7B17C3D6A400FAF441 /* Aumentar Build Number */,
 				B27F276817C2E60B00112F91 /* ShellScript */,
 				B27F272A17C2919800112F91 /* Sources */,
 				B27F272B17C2919800112F91 /* Frameworks */,
 				B27F272C17C2919800112F91 /* Resources */,
-				B27F276917C2E84C00112F91 /* ShellScript */,
+				B27F276917C2E84C00112F91 /* Run Script cleanUp */,
 			);
 			buildRules = (
 			);
@@ -235,18 +236,33 @@
 			shellPath = /bin/sh;
 			shellScript = "\nif [ $CONFIGURATION == \"Release\" ] ; then\n    /bin/sh ${SRCROOT}/scripts/tagIcons.sh tag ${SRCROOT}\nfi";
 		};
-		B27F276917C2E84C00112F91 /* ShellScript */ = {
+		B27F276917C2E84C00112F91 /* Run Script cleanUp */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script cleanUp";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ $CONFIGURATION == \"Release\" ] ; then\n/bin/sh ${SRCROOT}/scripts/tagIcons.sh cleanup ${SRCROOT}\nfi";
+		};
+		B2888F7B17C3D6A400FAF441 /* Aumentar Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Aumentar Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == \"Release\" ] ; then\n/bin/sh ${SRCROOT}/scripts/changeBuildNumber.sh\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
