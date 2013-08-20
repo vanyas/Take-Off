@@ -9,4 +9,10 @@ NEW_BUILD_NUMBER=${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.$((${BASH_REMATCH[3]}+1))
 
 
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $NEW_BUILD_NUMBER" "${INFOPLIST_FILE}"
+
+
+#crear commit
+MESSAGE="Archive Build: "$BUILDNUM
+git add scripts/changeBuildNumber.sh
+git commit -m $MESSAGE
    
