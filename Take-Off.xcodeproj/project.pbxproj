@@ -18,6 +18,13 @@
 		B27F274817C2919800112F91 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27F274717C2919800112F91 /* Default-568h@2x.png */; };
 		B27F274B17C2919800112F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F274A17C2919800112F91 /* ViewController.m */; };
 		B27F274E17C2919800112F91 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27F274C17C2919800112F91 /* ViewController.xib */; };
+		B27F275917C291BE00112F91 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F275517C291BE00112F91 /* libTestFlight.a */; };
+		B27F275B17C291D700112F91 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F275A17C291D700112F91 /* libz.dylib */; };
+		B27F275D17C2938900112F91 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27F275C17C2938900112F91 /* Icon.png */; };
+		B27F275F17C2938E00112F91 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27F275E17C2938E00112F91 /* Icon@2x.png */; };
+		B27F276317C2C9C100112F91 /* feedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F276117C2C9C100112F91 /* feedbackVC.m */; };
+		B27F276417C2C9C100112F91 /* feedbackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27F276217C2C9C100112F91 /* feedbackVC.xib */; };
+		B27F276717C2E5D800112F91 /* tagIcons.sh in Resources */ = {isa = PBXBuildFile; fileRef = B27F276617C2E5D800112F91 /* tagIcons.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,17 @@
 		B27F274917C2919800112F91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B27F274A17C2919800112F91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B27F274D17C2919800112F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B27F275517C291BE00112F91 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		B27F275617C291BE00112F91 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		B27F275717C291BE00112F91 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		B27F275817C291BE00112F91 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		B27F275A17C291D700112F91 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B27F275C17C2938900112F91 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		B27F275E17C2938E00112F91 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		B27F276017C2C9C100112F91 /* feedbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feedbackVC.h; sourceTree = "<group>"; };
+		B27F276117C2C9C100112F91 /* feedbackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = feedbackVC.m; sourceTree = "<group>"; };
+		B27F276217C2C9C100112F91 /* feedbackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = feedbackVC.xib; sourceTree = "<group>"; };
+		B27F276617C2E5D800112F91 /* tagIcons.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = tagIcons.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27F275B17C291D700112F91 /* libz.dylib in Frameworks */,
 				B27F273217C2919800112F91 /* UIKit.framework in Frameworks */,
 				B27F273417C2919800112F91 /* Foundation.framework in Frameworks */,
 				B27F273617C2919800112F91 /* CoreGraphics.framework in Frameworks */,
+				B27F275917C291BE00112F91 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +78,7 @@
 			children = (
 				B27F273717C2919800112F91 /* Take-Off */,
 				B27F273017C2919800112F91 /* Frameworks */,
+				B27F276517C2E5D800112F91 /* scripts */,
 				B27F272F17C2919800112F91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +94,8 @@
 		B27F273017C2919800112F91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B27F275A17C291D700112F91 /* libz.dylib */,
+				B27F275417C291BE00112F91 /* TestFlightSDK2.0.0 */,
 				B27F273117C2919800112F91 /* UIKit.framework */,
 				B27F273317C2919800112F91 /* Foundation.framework */,
 				B27F273517C2919800112F91 /* CoreGraphics.framework */,
@@ -88,6 +111,9 @@
 				B27F274917C2919800112F91 /* ViewController.h */,
 				B27F274A17C2919800112F91 /* ViewController.m */,
 				B27F274C17C2919800112F91 /* ViewController.xib */,
+				B27F276017C2C9C100112F91 /* feedbackVC.h */,
+				B27F276117C2C9C100112F91 /* feedbackVC.m */,
+				B27F276217C2C9C100112F91 /* feedbackVC.xib */,
 				B27F273817C2919800112F91 /* Supporting Files */,
 			);
 			path = "Take-Off";
@@ -96,6 +122,8 @@
 		B27F273817C2919800112F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B27F275E17C2938E00112F91 /* Icon@2x.png */,
+				B27F275C17C2938900112F91 /* Icon.png */,
 				B27F273917C2919800112F91 /* Take-Off-Info.plist */,
 				B27F273A17C2919800112F91 /* InfoPlist.strings */,
 				B27F273D17C2919800112F91 /* main.m */,
@@ -107,6 +135,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B27F275417C291BE00112F91 /* TestFlightSDK2.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B27F275517C291BE00112F91 /* libTestFlight.a */,
+				B27F275617C291BE00112F91 /* TestFlight+AsyncLogging.h */,
+				B27F275717C291BE00112F91 /* TestFlight+ManualSessions.h */,
+				B27F275817C291BE00112F91 /* TestFlight.h */,
+			);
+			path = TestFlightSDK2.0.0;
+			sourceTree = "<group>";
+		};
+		B27F276517C2E5D800112F91 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B27F276617C2E5D800112F91 /* tagIcons.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B27F275117C2919800112F91 /* Build configuration list for PBXNativeTarget "Take-Off" */;
 			buildPhases = (
+				B27F276817C2E60B00112F91 /* ShellScript */,
 				B27F272A17C2919800112F91 /* Sources */,
 				B27F272B17C2919800112F91 /* Frameworks */,
 				B27F272C17C2919800112F91 /* Resources */,
+				B27F276917C2E84C00112F91 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -163,10 +212,43 @@
 				B27F274617C2919800112F91 /* Default@2x.png in Resources */,
 				B27F274817C2919800112F91 /* Default-568h@2x.png in Resources */,
 				B27F274E17C2919800112F91 /* ViewController.xib in Resources */,
+				B27F275D17C2938900112F91 /* Icon.png in Resources */,
+				B27F275F17C2938E00112F91 /* Icon@2x.png in Resources */,
+				B27F276417C2C9C100112F91 /* feedbackVC.xib in Resources */,
+				B27F276717C2E5D800112F91 /* tagIcons.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B27F276817C2E60B00112F91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif [ $CONFIGURATION == \"Release\" ] ; then\n    /bin/sh ${SRCROOT}/scripts/tagIcons.sh tag ${SRCROOT}\nfi";
+		};
+		B27F276917C2E84C00112F91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == \"Release\" ] ; then\n/bin/sh ${SRCROOT}/scripts/tagIcons.sh cleanup ${SRCROOT}\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B27F272A17C2919800112F91 /* Sources */ = {
@@ -176,6 +258,7 @@
 				B27F273E17C2919800112F91 /* main.m in Sources */,
 				B27F274217C2919800112F91 /* AppDelegate.m in Sources */,
 				B27F274B17C2919800112F91 /* ViewController.m in Sources */,
+				B27F276317C2C9C100112F91 /* feedbackVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +343,19 @@
 		B27F275217C2919800112F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vangeli Ontiveros Islas (K6R39ACY2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vangeli Ontiveros Islas (K6R39ACY2E)";
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Take-Off/Take-Off-Prefix.pch";
 				INFOPLIST_FILE = "Take-Off/Take-Off-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK2.0.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6B3B0258-8A92-48CD-B29A-CE25CEB1B937";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "28AA2A57-1DF7-40F9-8A11-813064460DC0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,10 +363,19 @@
 		B27F275317C2919800112F91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vangeli Ontiveros Islas";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vangeli Ontiveros Islas";
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Take-Off/Take-Off-Prefix.pch";
 				INFOPLIST_FILE = "Take-Off/Take-Off-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK2.0.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0619D0C4-1AD7-4BB3-AB97-45A1E11BFEF2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0619D0C4-1AD7-4BB3-AB97-45A1E11BFEF2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +399,7 @@
 				B27F275317C2919800112F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

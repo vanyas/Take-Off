@@ -19,6 +19,10 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //testflight
+    [TestFlight takeOff:@"595bbaf1-c27b-4b23-af06-1f43f9227d16"];
+    
     return YES;
 }
 

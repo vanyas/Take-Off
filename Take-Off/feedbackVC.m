@@ -8,7 +8,7 @@
 
 #import "feedbackVC.h"
 
-@interface feedbackVC ()
+@interface feedbackVC ()<UITextViewDelegate>
 
 @end
 
@@ -35,4 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sendFeedBack:(id)sender {
+    
+    if (![self.textFeed.text isEqualToString:@""]) {
+        [TestFlight submitFeedback:self.textFeed.text];
+    }
+    
+    [self dismissViewControllerAnimated:YES
+                             completion:nil];
+    
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView{
+    [self sendFeedBack:nil];
+}
 @end

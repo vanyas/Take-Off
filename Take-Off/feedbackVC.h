@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface feedbackVC : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *textFeed;
+- (IBAction)sendFeedBack:(id)sender;
 
 @end
