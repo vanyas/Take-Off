@@ -22,9 +22,6 @@
 *.lock
 profile
 
-tagImage.qtz
-tagImage.workflow
-
 ####
 # Xcode temporary files that should never be committed
 # 
