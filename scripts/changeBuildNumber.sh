@@ -16,5 +16,5 @@ MESSAGE="Archive Build: $BUILDNUM"
 echo "*--- "$MESSAGE" ----*"
 echo ${INFOPLIST_FILE}
 git add .
-git commit -m '$MESSAGE'
+git commit -m "$MESSAGE"
    
