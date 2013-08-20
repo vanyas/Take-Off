@@ -1,7 +1,7 @@
 #!/bin/bash
 
 commit=`git rev-parse --short HEAD`
-version=`/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${INFOPLIST_FILE}"`
+bundleVersion=`/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${INFOPLIST_FILE}"`
 mode=$1
 tagMode="tag"
 cleanupMode="cleanup"
@@ -33,7 +33,7 @@ do
 
                 cd $taggerDirectory
                 /usr/libexec/PlistBuddy -c "Set $paramsPath:renderPixelsHigh $renderSize" -c "Set $paramsPath:renderPixelsWide $renderSize" $taggerPlist
-                automator -D text=$version$'\n Build' -D image=$icon -i tagImage.qtz tagImage.workflow > /dev/null
+                automator -D text=$bundleVersion$'\n Build' -D image=$icon -i tagImage.qtz tagImage.workflow > /dev/null
                 git checkout $taggerPlist
 
                 sips --cropToHeightWidth $height $width tagImage.png > /dev/null
