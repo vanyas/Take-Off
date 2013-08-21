@@ -21,7 +21,7 @@
     [self.window makeKeyAndVisible];
     
     //testflight
-    [TestFlight takeOff:@"595bbaf1-c27b-4b23-af06-1f43f9227d16"];
+    [TestFlight takeOff:@"903dcd9c-02d8-4b63-96d6-f09e5d465bcc"];
     
     return YES;
 }

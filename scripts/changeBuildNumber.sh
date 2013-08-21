@@ -15,6 +15,6 @@ NEW_BUILD_NUMBER=${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.$((${BASH_REMATCH[3]}+1))
 MESSAGE="Archive Build: $BUILDNUM"
 echo "*--- "$MESSAGE" ----*"
 echo ${INFOPLIST_FILE}
-git add .
+git add "${INFOPLIST_FILE}"
 git commit -m "$MESSAGE"
    
